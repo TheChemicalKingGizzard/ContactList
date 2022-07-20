@@ -16,8 +16,8 @@ class ContactInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        phoneLabel.text = contact.number
-        eMailLabel.text = contact.eMail
+        phoneLabel.text = "Phone: \(contact.number)"
+        eMailLabel.text = "Email: \(contact.eMail)"
         navigationItem.title = "\(contact.name) \(contact.surName)"
         tabBarItem.isEnabled = false
         
