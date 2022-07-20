@@ -27,7 +27,6 @@ class SecondListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView,
                             titleForHeaderInSection section: Int) -> String? {
-        
         return "\(contactList[section].name) \(contactList[section].surName)"
     }
     

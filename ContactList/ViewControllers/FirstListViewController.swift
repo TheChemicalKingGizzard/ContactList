@@ -27,17 +27,14 @@ class FirstListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contact",
                                                  for: indexPath)
         let contact = contactList[indexPath.row]
-        
         var content = cell.defaultContentConfiguration()
         content.text = "\(contact.name) \(contact.surName)"
         cell.contentConfiguration = content
-        
         return cell
     }
     
     override func tableView(_ tableView: UITableView,
                             didSelectRowAt indexPath: IndexPath) {
-        
         let contact = contactList[indexPath.row]
         performSegue(withIdentifier: "showInfo", sender: contact)
     }
@@ -48,5 +45,4 @@ class FirstListViewController: UITableViewController {
         }
         dest.contact = sender as? Contact
     }
-    
 }
