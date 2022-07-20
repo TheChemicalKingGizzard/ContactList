@@ -27,6 +27,7 @@ class FirstListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contact",
                                                  for: indexPath)
         let contact = contactList[indexPath.row]
+        
         var content = cell.defaultContentConfiguration()
         content.text = "\(contact.name) \(contact.surName)"
         cell.contentConfiguration = content
@@ -42,7 +43,9 @@ class FirstListViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let dest = segue.destination as? ContactInfoViewController else { return }
+        guard let dest = segue.destination as? ContactInfoViewController else {
+            return
+        }
         dest.contact = sender as? Contact
     }
     

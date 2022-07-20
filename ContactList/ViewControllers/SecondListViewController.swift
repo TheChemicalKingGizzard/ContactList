@@ -13,26 +13,29 @@ class SecondListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return contactList.count
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView,
+                            numberOfRowsInSection section: Int) -> Int {
         return 2
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView,
+                            titleForHeaderInSection section: Int) -> String? {
+        
         return "\(contactList[section].name) \(contactList[section].surName)"
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView,
+                            cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reusableCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reusableCell",
+                                                 for: indexPath)
         var content = cell.defaultContentConfiguration()
         let contact = contactList[indexPath.section]
         
@@ -43,10 +46,8 @@ class SecondListViewController: UITableViewController {
             content.text = contact.eMail
             content.image = UIImage.init(systemName: "tray")
         }
-           
+        
         cell.contentConfiguration = content
-
         return cell
     }
-
 }

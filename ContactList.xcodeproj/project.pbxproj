@@ -28,10 +28,10 @@
 		C5710AC728882C470024205E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5710AC928882C470024205E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5710ACF288830450024205E /* FirstListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstListViewController.swift; sourceTree = "<group>"; };
-		C5710AD1288830D20024205E /* SecondListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondListViewController.swift; sourceTree = SOURCE_ROOT; };
+		C5710AD1288830D20024205E /* SecondListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondListViewController.swift; path = ContactList/ViewControllers/SecondListViewController.swift; sourceTree = SOURCE_ROOT; };
 		C5710AD3288831020024205E /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
 		C5710AD528883D690024205E /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = SOURCE_ROOT; };
-		C5710AD728888B150024205E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = SOURCE_ROOT; };
+		C5710AD728888B150024205E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = ContactList/ViewControllers/TabBarViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				C5710AD528883D690024205E /* Contact.swift */,
-				C5710ACF288830450024205E /* FirstListViewController.swift */,
-				C5710AD1288830D20024205E /* SecondListViewController.swift */,
-				C5710AD3288831020024205E /* ContactInfoViewController.swift */,
-				C5710AD728888B150024205E /* TabBarViewController.swift */,
+				C5710AD928889B9A0024205E /* ViewControllers */,
 				C5710ABB28882C450024205E /* AppDelegate.swift */,
 				C5710ABD28882C450024205E /* SceneDelegate.swift */,
 				C5710AC128882C450024205E /* Main.storyboard */,
@@ -77,6 +74,17 @@
 				C5710AC928882C470024205E /* Info.plist */,
 			);
 			path = ContactList;
+			sourceTree = "<group>";
+		};
+		C5710AD928889B9A0024205E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5710AD728888B150024205E /* TabBarViewController.swift */,
+				C5710ACF288830450024205E /* FirstListViewController.swift */,
+				C5710AD3288831020024205E /* ContactInfoViewController.swift */,
+				C5710AD1288830D20024205E /* SecondListViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = DTKBA33P3A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ContactList/Info.plist;
@@ -320,7 +328,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = DTKBA33P3A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ContactList/Info.plist;
@@ -348,7 +356,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

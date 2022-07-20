@@ -27,7 +27,6 @@ struct Contact {
         }
         return completedContacts
     }
-
 }
 
 class DataStore {
@@ -76,4 +75,3 @@ class DataStore {
                    "ninth@icloud.com",
                    "tenth@icloud.com"]
 }
-

@@ -22,8 +22,4 @@ class ContactInfoViewController: UIViewController {
         tabBarItem.isEnabled = false
         
     }
-    
-   
-
-
 }
