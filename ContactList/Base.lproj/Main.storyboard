@@ -101,12 +101,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="secondContact" id="1Ms-X0-UNA">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reusableCell" id="1Ms-X0-UNA">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Ms-X0-UNA" id="77o-eW-lfT">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="t" translatesAutoresizingMaskIntoConstraints="NO" id="ivx-n6-wRP">
+                                            <rect key="frame" x="20" y="0.0" width="44" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -119,13 +125,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ew-hT-fWc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2693" y="1128"/>
+            <point key="canvasLocation" x="2692.753623188406" y="1127.6785714285713"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0zW-wf-mWb">
             <objects>
                 <navigationController id="wvV-oc-Mqh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="MAb-Dg-scH"/>
+                    <tabBarItem key="tabBarItem" tag="1" systemItem="contacts" id="MAb-Dg-scH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="dFL-dI-DJx">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -138,10 +144,10 @@
             </objects>
             <point key="canvasLocation" x="1777" y="1128"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="Evj-rK-tiA">
             <objects>
-                <tabBarController id="XIh-yK-NEV" sceneMemberID="viewController">
+                <tabBarController providesPresentationContextTransitionStyle="YES" id="XIh-yK-NEV" customClass="TabBarViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="630-hY-0HK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -175,6 +181,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="t" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

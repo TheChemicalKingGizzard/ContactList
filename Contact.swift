@@ -4,9 +4,6 @@
 //
 //  Created by Даниил Петров on 20.07.2022.
 //
-
-import Foundation
-
 struct Contact {
     
     var name: String
@@ -14,27 +11,24 @@ struct Contact {
     let number: String
     let eMail: String
     
-    
     static func getContactList() -> [Contact] {
         var completedContacts: [Contact] = []
-        let storePerson = DataStore()
+        let storedDates = DataStore()
         
         while completedContacts.count != 10 {
-            let person  = Contact(name: storePerson.names.remove(at: Int.random(in: 0..<storePerson.names.count)),
-                                 surName: storePerson.surNames.remove(at: Int.random(in: 0..<storePerson.surNames.count)),
-                                 number: storePerson.numbers.remove(at: Int.random(in: 0..<storePerson.numbers.count)),
-                                 eMail: storePerson.eMails.remove(at: Int.random(in: 0..<storePerson.eMails.count)))
-
+            let person = Contact(
+                name: storedDates.names.remove(at: Int.random(in: 0..<storedDates.names.count)),
+                surName: storedDates.surNames.remove(at: Int.random(in: 0..<storedDates.surNames.count)),
+                number: storedDates.numbers.remove(at: Int.random(in: 0..<storedDates.numbers.count)),
+                eMail: storedDates.eMails.remove(at: Int.random(in: 0..<storedDates.eMails.count))
+            )
+            
             completedContacts.append(person)
         }
-
         return completedContacts
     }
-    
+
 }
-
-
-
 
 class DataStore {
     
@@ -81,7 +75,5 @@ class DataStore {
                    "eighth@icloud.com",
                    "ninth@icloud.com",
                    "tenth@icloud.com"]
-    
-    
-    
 }
+

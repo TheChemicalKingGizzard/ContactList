@@ -9,13 +9,12 @@ import UIKit
 
 class FirstListViewController: UITableViewController {
 
-    let contactList = Contact.getContactList()
+    var contactList = TabBarViewController.contactList
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 40
     }
-    
     
     override func tableView(_ tableView: UITableView,
                             numberOfRowsInSection section: Int) -> Int {
@@ -43,7 +42,8 @@ class FirstListViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let dest = segue.destination as? ContactInfoViewController else {return}
+        guard let dest = segue.destination as? ContactInfoViewController else { return }
         dest.contact = sender as? Contact
     }
+    
 }
