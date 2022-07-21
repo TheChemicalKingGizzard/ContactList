@@ -6,7 +6,7 @@
 //
 struct Contact {
     
-    var name: String
+    let name: String
     let surName: String
     let number: String
     let eMail: String
