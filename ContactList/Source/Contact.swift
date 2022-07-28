@@ -30,7 +30,6 @@ extension Contact {
             )
             completedContacts.append(person)
         }
-        print("new array")
         return completedContacts
     }
 }

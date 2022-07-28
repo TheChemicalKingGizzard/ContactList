@@ -19,7 +19,5 @@ class ContactInfoViewController: UIViewController {
         phoneLabel.text = "Phone: \(contact.number)"
         eMailLabel.text = "Email: \(contact.eMail)"
         navigationItem.title = "\(contact.name) \(contact.surName)"
-        tabBarItem.isEnabled = false
-        
     }
 }
