@@ -17,6 +17,7 @@
 		C5710AD4288831020024205E /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5710AD3288831020024205E /* ContactInfoViewController.swift */; };
 		C5710AD628883D690024205E /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5710AD528883D690024205E /* Contact.swift */; };
 		C5710AD828888B150024205E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5710AD728888B150024205E /* TabBarViewController.swift */; };
+		C59DDC802892949900F4B7EC /* ContactsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59DDC7F2892949900F4B7EC /* ContactsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +31,9 @@
 		C5710ACF288830450024205E /* FirstListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstListViewController.swift; sourceTree = "<group>"; };
 		C5710AD1288830D20024205E /* SecondListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondListViewController.swift; path = ContactList/ViewControllers/SecondListViewController.swift; sourceTree = SOURCE_ROOT; };
 		C5710AD3288831020024205E /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
-		C5710AD528883D690024205E /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = SOURCE_ROOT; };
+		C5710AD528883D690024205E /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = ContactList/Source/Contact.swift; sourceTree = SOURCE_ROOT; };
 		C5710AD728888B150024205E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = ContactList/ViewControllers/TabBarViewController.swift; sourceTree = SOURCE_ROOT; };
+		C59DDC7F2892949900F4B7EC /* ContactsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +66,13 @@
 		C5710ABA28882C450024205E /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				C5710AD528883D690024205E /* Contact.swift */,
+				C59DDC7D2892941E00F4B7EC /* Source */,
+				C59DDC7E2892945400F4B7EC /* Services */,
 				C5710AD928889B9A0024205E /* ViewControllers */,
-				C5710ABB28882C450024205E /* AppDelegate.swift */,
-				C5710ABD28882C450024205E /* SceneDelegate.swift */,
 				C5710AC128882C450024205E /* Main.storyboard */,
 				C5710AC428882C470024205E /* Assets.xcassets */,
 				C5710AC628882C470024205E /* LaunchScreen.storyboard */,
-				C5710AC928882C470024205E /* Info.plist */,
+				C59DDC7C289293B100F4B7EC /* Support */,
 			);
 			path = ContactList;
 			sourceTree = "<group>";
@@ -85,6 +86,32 @@
 				C5710AD1288830D20024205E /* SecondListViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C59DDC7C289293B100F4B7EC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C5710ABB28882C450024205E /* AppDelegate.swift */,
+				C5710ABD28882C450024205E /* SceneDelegate.swift */,
+				C5710AC928882C470024205E /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		C59DDC7D2892941E00F4B7EC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C5710AD528883D690024205E /* Contact.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C59DDC7E2892945400F4B7EC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C59DDC7F2892949900F4B7EC /* ContactsData.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +191,7 @@
 				C5710ABE28882C450024205E /* SceneDelegate.swift in Sources */,
 				C5710AD828888B150024205E /* TabBarViewController.swift in Sources */,
 				C5710AD4288831020024205E /* ContactInfoViewController.swift in Sources */,
+				C59DDC802892949900F4B7EC /* ContactsData.swift in Sources */,
 				C5710AD0288830450024205E /* FirstListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -294,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -313,7 +341,7 @@
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = DTKBA33P3A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = Contactlist/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -341,7 +369,7 @@
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = DTKBA33P3A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = Contactlist/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

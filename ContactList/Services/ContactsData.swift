@@ -1,37 +1,8 @@
-//
-//  Contact.swift
-//  ContactList
-//
-//  Created by Даниил Петров on 20.07.2022.
-//
-struct Contact {
-    
-    let name: String
-    let surName: String
-    let number: String
-    let eMail: String
-    
-    static func getContactList() -> [Contact] {
-        var completedContacts: [Contact] = []
-        let storedDates = DataStore()
-        
-        while completedContacts.count != 10 {
-            let person = Contact(
-                name: storedDates.names.remove(at: Int.random(in: 0..<storedDates.names.count)),
-                surName: storedDates.surNames.remove(at: Int.random(in: 0..<storedDates.surNames.count)),
-                number: storedDates.numbers.remove(at: Int.random(in: 0..<storedDates.numbers.count)),
-                eMail: storedDates.eMails.remove(at: Int.random(in: 0..<storedDates.eMails.count))
-            )
-            
-            completedContacts.append(person)
-        }
-        return completedContacts
-    }
-}
-
 class DataStore {
     
-    var names = ["Michael",
+    static let shared = DataStore()
+    
+    let names = ["Michael",
                  "Dwight",
                  "Jim",
                  "Pam",
@@ -42,7 +13,7 @@ class DataStore {
                  "Oscar",
                  "Phyllis"]
     
-    var surNames = ["Scott",
+    let surNames = ["Scott",
                     "Schrute",
                     "Halpert",
                     "Beesly",
@@ -53,7 +24,7 @@ class DataStore {
                     "Martinez",
                     "Vance"]
     
-    var numbers = ["1111111",
+    let numbers = ["1111111",
                    "2222222",
                    "3333333",
                    "4444444",
@@ -64,7 +35,7 @@ class DataStore {
                    "9999999",
                    "0000000"]
     
-    var  eMails = ["first@icloud.com",
+    let  eMails = ["first@icloud.com",
                    "second@icloud.com",
                    "third@icloud.com",
                    "fourth@icloud.com",
