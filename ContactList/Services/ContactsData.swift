@@ -45,4 +45,6 @@ class DataStore {
                    "eighth@icloud.com",
                    "ninth@icloud.com",
                    "tenth@icloud.com"]
+    
+    private init() {}
 }

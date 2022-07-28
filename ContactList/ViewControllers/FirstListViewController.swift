@@ -9,7 +9,7 @@ import UIKit
 
 class FirstListViewController: UITableViewController {
 
-    let contactList = TabBarViewController.contactList
+    var contactList: [Contact] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()

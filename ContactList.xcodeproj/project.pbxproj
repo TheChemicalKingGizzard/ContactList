@@ -18,6 +18,8 @@
 		C5710AD628883D690024205E /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5710AD528883D690024205E /* Contact.swift */; };
 		C5710AD828888B150024205E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5710AD728888B150024205E /* TabBarViewController.swift */; };
 		C59DDC802892949900F4B7EC /* ContactsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59DDC7F2892949900F4B7EC /* ContactsData.swift */; };
+		C59DDC822892A5DA00F4B7EC /* FirstNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59DDC812892A5DA00F4B7EC /* FirstNavController.swift */; };
+		C59DDC842892A7BF00F4B7EC /* SecondNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59DDC832892A7BF00F4B7EC /* SecondNavController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		C5710AD528883D690024205E /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = ContactList/Source/Contact.swift; sourceTree = SOURCE_ROOT; };
 		C5710AD728888B150024205E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = ContactList/ViewControllers/TabBarViewController.swift; sourceTree = SOURCE_ROOT; };
 		C59DDC7F2892949900F4B7EC /* ContactsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsData.swift; sourceTree = "<group>"; };
+		C59DDC812892A5DA00F4B7EC /* FirstNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNavController.swift; sourceTree = "<group>"; };
+		C59DDC832892A7BF00F4B7EC /* SecondNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNavController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				C5710AD728888B150024205E /* TabBarViewController.swift */,
+				C59DDC812892A5DA00F4B7EC /* FirstNavController.swift */,
+				C59DDC832892A7BF00F4B7EC /* SecondNavController.swift */,
 				C5710ACF288830450024205E /* FirstListViewController.swift */,
 				C5710AD3288831020024205E /* ContactInfoViewController.swift */,
 				C5710AD1288830D20024205E /* SecondListViewController.swift */,
@@ -188,8 +194,10 @@
 				C5710AD628883D690024205E /* Contact.swift in Sources */,
 				C5710AD2288830D20024205E /* SecondListViewController.swift in Sources */,
 				C5710ABC28882C450024205E /* AppDelegate.swift in Sources */,
+				C59DDC842892A7BF00F4B7EC /* SecondNavController.swift in Sources */,
 				C5710ABE28882C450024205E /* SceneDelegate.swift in Sources */,
 				C5710AD828888B150024205E /* TabBarViewController.swift in Sources */,
+				C59DDC822892A5DA00F4B7EC /* FirstNavController.swift in Sources */,
 				C5710AD4288831020024205E /* ContactInfoViewController.swift in Sources */,
 				C59DDC802892949900F4B7EC /* ContactsData.swift in Sources */,
 				C5710AD0288830450024205E /* FirstListViewController.swift in Sources */,

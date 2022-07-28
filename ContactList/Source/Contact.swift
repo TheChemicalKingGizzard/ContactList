@@ -12,11 +12,11 @@ extension Contact {
         var completedContacts: [Contact] = []
         
         let names = DataStore.shared.names.shuffled()
-        let surNames = DataStore.shared.names.shuffled()
-        let phones = DataStore.shared.names.shuffled()
-        let eMails = DataStore.shared.names.shuffled()
+        let surNames = DataStore.shared.surNames.shuffled()
+        let phones = DataStore.shared.numbers.shuffled()
+        let eMails = DataStore.shared.eMails.shuffled()
         
-        let count  = min(names.count,
+        let count = min(names.count,
                          surNames.count,
                          phones.count,
                          eMails.count)
@@ -30,6 +30,7 @@ extension Contact {
             )
             completedContacts.append(person)
         }
+        print("new array")
         return completedContacts
     }
 }

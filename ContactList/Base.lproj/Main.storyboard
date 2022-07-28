@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="2692.753623188406" y="1127.6785714285713"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Second Nav Controller-->
         <scene sceneID="0zW-wf-mWb">
             <objects>
-                <navigationController id="wvV-oc-Mqh" sceneMemberID="viewController">
+                <navigationController id="wvV-oc-Mqh" customClass="SecondNavController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="1" systemItem="contacts" id="MAb-Dg-scH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="dFL-dI-DJx">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -162,10 +162,10 @@
             </objects>
             <point key="canvasLocation" x="758" y="767"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--FirstNavController-->
         <scene sceneID="BHl-dU-FcO">
             <objects>
-                <navigationController id="xlq-Ns-Jhw" sceneMemberID="viewController">
+                <navigationController title="FirstNavController" id="xlq-Ns-Jhw" customClass="FirstNavController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="pMX-uq-k5V"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="37b-nu-zFp">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
